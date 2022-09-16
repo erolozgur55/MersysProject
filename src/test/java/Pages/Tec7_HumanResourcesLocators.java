@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tec07_HumanResourcesLocators extends Parent{
-    public Tec07_HumanResourcesLocators() {
+public class Tec7_HumanResourcesLocators extends Parent{
+    public Tec7_HumanResourcesLocators() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 

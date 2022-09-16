@@ -1,14 +1,14 @@
 package StepDefinitions;
 
 import Pages.Parent;
-import Pages.Tec07_HumanResourcesLocators;
+import Pages.Tec7_HumanResourcesLocators;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Tec07_HumanResSteps extends Parent {
 
-    Tec07_HumanResourcesLocators lc=new Tec07_HumanResourcesLocators();
+    Tec7_HumanResourcesLocators lc=new Tec7_HumanResourcesLocators();
     @When("Click to Human Resources ,Setup and Positions")
     public void clickToHumanResourcesSetupAndPositions() {
         lc.findAndClick("HumanRes");

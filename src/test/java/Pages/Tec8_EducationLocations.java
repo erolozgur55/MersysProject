@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tec08_EducationLocations extends Parent{
-    public Tec08_EducationLocations() {
+public class Tec8_EducationLocations extends Parent{
+    public Tec8_EducationLocations() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 

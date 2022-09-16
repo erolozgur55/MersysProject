@@ -7,7 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Tec4_BankAccountsSteps {
+public class Tec04_BankAccountsSteps {
 
     Tec34LeftNav ln=new Tec34LeftNav();
     Tec34DialogContent dc=new Tec34DialogContent();

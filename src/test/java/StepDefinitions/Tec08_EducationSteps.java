@@ -1,14 +1,14 @@
 package StepDefinitions;
 
 import Pages.Parent;
-import Pages.Tec08_EducationLocations;
+import Pages.Tec8_EducationLocations;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Tec08_EducationSteps extends Parent {
 
-    Tec08_EducationLocations lo=new Tec08_EducationLocations();
+    Tec8_EducationLocations lo=new Tec8_EducationLocations();
     @When("Navigate to Education,Setup and Subject Categories")
     public void navigateToEducationSetupAndSubjectCategories() {
         lo.findAndClick("Education");
