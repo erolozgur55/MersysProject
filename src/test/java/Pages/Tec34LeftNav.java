@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tec4LeftNav extends Parent{
+public class Tec34LeftNav extends Parent{
 
-    public Tec4LeftNav() {
+    public Tec34LeftNav() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 

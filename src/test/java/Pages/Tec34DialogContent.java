@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tec03DialogContent extends Parent{
+public class Tec34DialogContent extends Parent{
 
-    public Tec03DialogContent() {
+    public Tec34DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 

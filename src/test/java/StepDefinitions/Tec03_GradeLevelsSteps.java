@@ -1,14 +1,14 @@
 package StepDefinitions;
 
-import Pages.Tec03DialogContent;
-import Pages.Tec4LeftNav;
+import Pages.Tec34DialogContent;
+import Pages.Tec34LeftNav;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
 public class Tec03_GradeLevelsSteps {
-    Tec4LeftNav ln=new Tec4LeftNav();
-    Tec03DialogContent dc=new Tec03DialogContent();
+    Tec34LeftNav ln=new Tec34LeftNav();
+    Tec34DialogContent dc=new Tec34DialogContent();
     Faker faker= Faker.instance();
 
     @When("Click the add button, fill in the blanks and click the save button on the grade level")
