@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class DialogContent extends Parent{
+public class Tec09_10_DialogContent extends Parent{
 
-    public DialogContent() {
+    public Tec09_10_DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
@@ -45,7 +45,7 @@ public class DialogContent extends Parent{
     @FindBy(xpath="//ms-save-button[@class='ng-star-inserted']//button")
     private WebElement saveButton;
 
-    @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing']")
+    @FindBy(xpath="//dynamic-view[@class='ng-star-inserted']")
     private WebElement successMessage;
 
     @FindBy(xpath="//ms-text-field[contains(@placeholder,'FIELD.NAME')]//input")
@@ -53,9 +53,6 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath = "//span[text()='Search']")
     private WebElement searchButton;
-
-//    @FindBy(css="[class='svg-inline--fa fa-trash-can']")
-//    private WebElement searchButton;
 
     @FindBy(xpath="(//ms-text-field[contains(@placeholder,'FIELD.NAME')]//input)[2]")
     private WebElement addNameAccount;
@@ -68,18 +65,6 @@ public class DialogContent extends Parent{
 
     @FindBy(xpath="//span[text()=' Text ']")
     private WebElement clickText;
-
-//    @FindBy(xpath="//ms-text-field[contains(@placeholder,'INTEGRATION_CODE')]//input")
-//    private WebElement addIntegrCode;
-
-//    @FindBy(xpath="//ms-save-button[contains(@class,'inserted')]//button")
-//    private WebElement saveaddButton;
-
-//    @FindBy(xpath="//ms-text-field[contains(@placeholder,'FIELD.NAME')]//input  ")
-//    private WebElement searchInput;
-
-//    @FindBy(xpath="//span[text()='Search']")
-//    private WebElement searchButton;
 
     @FindBy(xpath="//ms-delete-button//button")
     private WebElement deleteButton;
@@ -99,15 +84,10 @@ public class DialogContent extends Parent{
             case "addNameAccount" : myElement =addNameAccount; break;
             case "searchInput" : myElement =searchInput; break;
             case "addCode" : myElement =addCode; break;
-//            case "addIntegrCode" : myElement =addIntegrCode; break;
-//            case "searchInput" : myElement =searchInput; break;
-
-
         }
 
         sendKeysFunction(myElement, value);
     }
-
     public void findAndClick(String strElement){
 
         switch (strElement)
@@ -122,55 +102,29 @@ public class DialogContent extends Parent{
             case "studentRegresion" : myElement =studentRegresion; break;
             case "saveButton" : myElement =saveButton; break;
             case "searchButton" : myElement =searchButton; break;
-//            case "searchButton" : myElement =searchButton; break;
             case "deleteButton" : myElement =deleteButton; break;
             case "deleteDialogBtn" : myElement =deleteDialogBtn; break;
-
-
         }
-
         clickFunction(myElement);
-
-
     }
-
-    public void findAndContainsText(String strElement, String text){  // 2.aşama
-        // burda string isimden weblemente ulaşıcam
+    public void findAndContainsText(String strElement, String text){
         switch (strElement)
         {
             case "dashboard" : myElement =dashboard; break;
             case "successMessage" : myElement =successMessage; break;
 
         }
-
         verifyContainsText(myElement,text);
     }
-
-
     public void SearchAndDelete(String searchText){
 
-        //scrollUp()
-        findAndSend("searchInput", searchText); // aranacak kelimeyi kutucuğa gönder
-        findAndClick("searchButton"); // arama butonuna bas
-
-        //waitUntilLoading();
-
-        WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.textToBe(By.cssSelector("div[fxlayoutalign='center center'][class='control-full']"),"Search"));
-
-        findAndClick("deleteButton");// silme butonua bas
-        findAndClick("deleteDialogBtn");// dilogdaki silme butonuna bas
+        findAndSend("searchInput", searchText);
+        findAndClick("searchButton");
+//        WebDriverWait wait=new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(30));
+//        wait.until(ExpectedConditions.textToBe(By.cssSelector("div[fxlayoutalign='center center'][class='control-full']"),"Search"));
+        findAndClick("deleteButton");
+        findAndClick("deleteDialogBtn");
     }
-//    public void robotclick(String strElement){
-//        switch (strElement) {
-//            case "saveButton": myElement = saveButton; break;
-//
-//        }
-//        clickFunction(myElement);
-//
-//
-//    }
-
 
 
 }

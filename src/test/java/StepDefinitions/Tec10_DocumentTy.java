@@ -1,17 +1,16 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.Tec09_10_DialogContent;
+import Pages.Tec09_10_LeftNav;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 
-public class _03_DocumentTy {
-    LeftNav ln=new LeftNav();
-    DialogContent dc=new DialogContent();
+public class Tec10_DocumentTy {
+    Tec09_10_LeftNav ln=new Tec09_10_LeftNav();
+    Tec09_10_DialogContent dc=new Tec09_10_DialogContent();
 
     @And("Navigate to DocumentTyps page")
     public void navigateToDocumentTypsPage() {

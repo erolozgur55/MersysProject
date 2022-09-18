@@ -1,13 +1,13 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
+import Pages.Tec09_10_DialogContent;
 import Utilities.GWD;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class _01_LoginSteps {
-    DialogContent  dc =new DialogContent();
+    Tec09_10_DialogContent dc =new Tec09_10_DialogContent();
 
     @Given("Navigate to basqar")
     public void navigateToBasqar() {

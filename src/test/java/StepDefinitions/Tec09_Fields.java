@@ -1,13 +1,13 @@
 package StepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.Tec09_10_DialogContent;
+import Pages.Tec09_10_LeftNav;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 
-public class _02_Fields {
-    LeftNav ln=new LeftNav();
-    DialogContent dc=new DialogContent();
+public class Tec09_Fields {
+    Tec09_10_LeftNav ln=new Tec09_10_LeftNav();
+    Tec09_10_DialogContent dc=new Tec09_10_DialogContent();
     @And("Navigate to Fields page")
     public void navigateToFieldsPage() {
         ln.findAndClick("setup");
