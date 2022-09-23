@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import Utilities.GWD;
 import com.aventstack.extentreports.service.ExtentTestManager;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
@@ -20,7 +21,7 @@ public class Hooks {
 
         System.out.println("Scenario  Start");
     }
-
+@After
     public void after(Scenario scenario)
     {
         System.out.println("Scenario Finish");
