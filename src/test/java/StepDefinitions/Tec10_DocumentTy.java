@@ -22,12 +22,12 @@ public class Tec10_DocumentTy {
     @When("Create a DocumentTyps")
     public void createADocumentTyps() throws AWTException {
         dc.findAndClick("addbutton");
-        dc.findAndSend("addNameAccount","Server");
+        dc.findAndSend("addNameAccount","Rver");
         dc.findAndClick("clickStage");
         dc.findAndClick("studentRegresion");
         dc.robotclick("saveButton","");
         dc.findAndClick("saveButton");
-        dc.findAndSend("searchInput","Server");
+        dc.findAndSend("searchInput","Rver");
         dc.findAndClick("searchButton");
         dc.findAndClick("deleteButton");
         dc.findAndClick("deleteDialogBtn");

@@ -18,12 +18,12 @@ public class Tec09_Fields {
     @When("Create a Fields")
     public void createAFields() {
         dc.findAndClick("addbuttonAccount");
-        dc.findAndSend("addNameAccount","Server");
-        dc.findAndSend("addCode","7878");
+        dc.findAndSend("addNameAccount","Srver");
+        dc.findAndSend("addCode","7979");
         dc.findAndClick("addText");
         dc.findAndClick("clickText");
         dc.findAndClick("saveButton");
-        dc.findAndSend("searchInput","Server");
+        dc.findAndSend("searchInput","Srver");
         dc.findAndClick("searchButton");
         dc.findAndClick("deleteButton");
         dc.findAndClick("deleteDialogBtn");
